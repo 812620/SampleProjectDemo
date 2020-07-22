@@ -6,15 +6,15 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sampleprojectdemo
+      app: SampleProjectDemo
   template:
     metadata:
       labels:
-        app: sampleprojectdemo
+        app: SampleProjectDemo
     spec:
       containers:
       - name: R1repos
-        image: SampleCR.azurecr.io/R1repos:latest
+        image: samplecr.azurecr.io/r1repos:latest
         ports:
         - containerPort: 8080
       imagePullSecrets:
