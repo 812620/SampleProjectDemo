@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: SampleProjectDemo-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: SampleProjectDemo
+  template:
+    metadata:
+      labels:
+        app: SampleProjectDemo
+    spec:
+      containers:
+      - name: R1repos
+        image: SampleCR.azurecr.io/R1epos:latest
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: sampleprojectdemosn
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dockersampleconfig
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: Dockersampleconfig
