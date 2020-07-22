@@ -1,12 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: SampleProjectDemo-deployment
+  name: sampleprojectdemo-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: SampleProjectDemo
+      app: sampleprojectdemo
   template:
     metadata:
       labels:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: R1repos
-        image: SampleCR.azurecr.io/R1epos:latest
+        image: SampleCR.azurecr.io/R1repos:latest
         ports:
         - containerPort: 8080
       imagePullSecrets:
