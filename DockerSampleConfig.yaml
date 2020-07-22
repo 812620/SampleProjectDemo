@@ -13,7 +13,7 @@ spec:
         app: SampleProjectDemo
     spec:
       containers:
-      - name: r1repos
+      - name: sampleprojectdemo
         image: samplecr.azurecr.io/r1repos:latest
         ports:
         - containerPort: 8080
@@ -24,7 +24,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: dockersampleconfig
+  name: sampleprojectdemo
 spec:
   type: LoadBalancer
   ports:
