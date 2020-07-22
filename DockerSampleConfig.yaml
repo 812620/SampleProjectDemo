@@ -10,7 +10,7 @@ spec:
   template:
     metadata:
       labels:
-        app: SampleProjectDemo
+        app: sampleprojectdemo
     spec:
       containers:
       - name: R1repos
