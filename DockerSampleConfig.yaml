@@ -13,7 +13,7 @@ spec:
         app: SampleProjectDemo
     spec:
       containers:
-      - name: R1repos
+      - name: r1repos
         image: samplecr.azurecr.io/r1repos:latest
         ports:
         - containerPort: 8080
