@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: R1repos
-        image: SampleCR.azurecr.io/R1epos:latest
+        image: SampleCR.azurecr.io/R1repos:latest
         ports:
         - containerPort: 8080
       imagePullSecrets:
